@@ -24,16 +24,23 @@
             "detail": "컴파일러: /usr/bin/gcc"
         },
         {
-            "label": "Clean",
+            "label": "make mdriver (debug)",
             "type": "shell",
-            "command": "make clean",
-            "args": [],
-            "group": "build",
-            "problemMatcher": [],
-            "options": {
-                "cwd": "${workspaceFolder}/malloc-lab"
-            }
-        },
+            "command": "make clean && make mdriver",
+            "options": { "cwd": "${workspaceFolder}" },
+            "problemMatcher": "$gcc"
+        }, 
+        // {
+        //     "label": "Clean",
+        //     "type": "shell",
+        //     "command": "make clean",
+        //     "args": [],
+        //     "group": "build",
+        //     "problemMatcher": [],
+        //     "options": {
+        //         "cwd": "${workspaceFolder}/malloc-lab"
+        //     }
+        // },
         {
             "label": "Build mdriver",
             "type": "shell",
